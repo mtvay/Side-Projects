@@ -8,4 +8,6 @@ public class CharacterGenerator {
 	
 	//if the user want the program to roll ability scores it will output a fully rolled character
 	
+	//if the user wants to roll on their own i should include a printout of instructions for how to roll for each ability score
+	
 }
