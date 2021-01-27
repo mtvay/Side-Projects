@@ -10,4 +10,78 @@ public class CharacterGenerator {
 	
 	//if the user wants to roll on their own i should include a printout of instructions for how to roll for each ability score
 	
+	
+	/*
+	 * need to include:
+	 * 
+	 * subraces
+	 * 	->should be a sub class of the race they are a subrace of
+	 * 
+	 * class features
+	 * 	->capabilities that set them apart from other classes
+	 * 
+	 * Proficiencies
+	 * 	->armor, weapons, skills, saving throws, tools
+	 * 
+	 * hit points from hit dice - different classes have different dice for the roll (start with highest roll + constitution modifier)
+	 *   ->need to account for constitution modifier as well
+	 *   ->need to display hit dice used and number of hit dice per long rest
+	 *   
+	 *   proficiency bonus
+	 *   
+	 *   background?
+	 *   	->can affect proficiencies
+	 *   	->look into more in the book
+	 *  
+	 *  ability scores
+	 *  	->same random roll for everyone, then distribute and add race bonuses.
+	 *  	->roll 4 6-sided dice and keep three highest rolls and add together.
+	 *  		->do this 6 total times so you have 6 numbers(total of 3 highest)
+	 *  	->assign one number to each ability score
+	 *  	->add in modifiers from race
+	 *  	->determine ability modifiers
+	 *  		->table with all possibilities in player's handbook, pull from there for if statements
+	 *  	->need to make sure the program defaults the highest score to the most important ability score based on class
+	 *  
+	 *  name
+	 *  	->look into a random name generator
+	 *  
+	 *  description
+	 *  	->is it worth including this?
+	 *  		->could be useful/fun - would have different description generators for each class and race
+	 *  	->height and weight generator with rolls
+	 *  	->can look into linking appearance with ability scores(high strength = large and ripped, high dexterity = slim/lithe build, etc...)
+	 *  		->GREAT DESCRIPTIONS AND OPTIONS IN HANDBOOK PAGE 14
+	 *  alignment
+	 *  	->populate list with all options and use a random one
+	 *  		->can look into different lists for different classes (paladin = good, warlock = evil, etc...)
+	 *  
+	 *  ideals, bonds, and flaws
+	 *  	->not sure about this, look into more
+	 *  
+	 *  starting equipment
+	 *  	->determined by class and background
+	 *  	->one free trinket
+	 *  
+	 *  armor class
+	 *  	->do i want to have it change based on just 10+ dexterity modifier or have it account for shield/armor in starting equipment
+	 *  	->need to look into how certain class features affect AC
+	 *  
+	 *  option to create a party?
+	 *  	->enter number of part members, run program that many times
+	 *  
+	 *  _______________________________________________________________________________________________________________________________________________
+	 *  
+	 *  POSSIBLE EXPANSION IDEAS
+	 *  
+	 *  option to choose specific class and generate from there? |
+	 *  option to choose specific race and generate from there?  | - think about it while working on everything else, might be too hard to 
+	 *  option for both?										 |	 implement at a later date. Might be easier to include from the beginning.
+	 *  
+	 *  option to generate character at set level?
+	 * 		->add in all the level up options to each class and give the user the option to generate a character at a specific class with random stuff.
+	 *  	
+	 * 	fireball? fireball
+	 * 		->ask user if they want fireball and give them the fireball spell if available and a scroll of fireball if not
+	 */
 }
