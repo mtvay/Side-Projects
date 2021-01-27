@@ -10,6 +10,7 @@ public class CharacterGenerator {
 	
 	//if the user wants to roll on their own i should include a printout of instructions for how to roll for each ability score
 	
+	//DO I NEED TO GIVE CREDIT/REFERENCE/CITE THE PLAYER'S HANDBOOK?
 	
 	/*
 	 * need to include:
