@@ -1,6 +1,9 @@
 package com.techelevator;
 
-public class Races {
+import java.util.HashMap;
+import java.util.Map;
+
+public abstract class Races {
 	
 	//will contain information for all the races available in the base player's handbook
 	
@@ -8,5 +11,43 @@ public class Races {
 	
 	//should races be an interface? I can have each race be its own java class. Then i can map a list of races to randomly pull from.
 
+	private String name; //create array of possible names for each race inside the race class
+	private String racialTraits;
+	private String size;
+	private String speed;
+	private String languages;
+	private String race;
+	private Map<String, Integer> abilityScoreIncrease = new HashMap<>();
+	private int age;
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String getRacialTraits() {
+		return racialTraits;
+	}
+	
+	public String getSize() {
+		return size;
+	}
+	
+	public String getSpeed() {
+		return speed;
+	}
+	
+	public String getLanguages() {
+		return languages;
+	}
+	
+	public String getRace() {
+		return race;
+	}
 
+	public abstract Map<String, Integer> getAbilityScoreIncrease();
+	
+	public int getAge() {
+		return age;
+	}
+	
 }
