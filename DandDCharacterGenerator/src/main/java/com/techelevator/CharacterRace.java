@@ -3,7 +3,7 @@ package com.techelevator;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class Races {
+public abstract class CharacterRace {
 	
 	//will contain information for all the races available in the base player's handbook
 	
