@@ -1,6 +1,6 @@
 package com.techelevator;
 
-public class CharacterClass {
+public class CharacterClass implements Describable{
 
 	//will contains information for all of the classes available in the base player's handbook
 	
@@ -8,12 +8,15 @@ public class CharacterClass {
 	
 	//classes should be an ABSTRACT -- I can have each dnd class be its own java class. Then i can map a list of dnd classes to randomly pull from.
 	
-	private String allignment; //
+	private String allignment;
+	private String description;
 	
 	public String getAllignment() {
 		return allignment;
 	}
 	
-	
+	public String getDescription() {
+		return description;
+	}
 	
 }

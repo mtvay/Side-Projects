@@ -32,7 +32,7 @@ public class DiceRoller {
 		int[] diceRolls = new int[4];
 		Random randomNum = new Random();
 		
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 4; i++) {
 			diceRolls[i] = randomNum.nextInt(6) + 1;
 		}
 		

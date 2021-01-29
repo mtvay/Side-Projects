@@ -3,7 +3,7 @@ package com.techelevator;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class CharacterRace {
+public abstract class CharacterRace implements Describable {
 	
 	//will contain information for all the races available in the base player's handbook
 	
@@ -19,6 +19,7 @@ public abstract class CharacterRace {
 	private String race;
 	private Map<String, Integer> abilityScoreIncrease = new HashMap<>();
 	private int age;
+	private String description;
 	
 	public String getName() {
 		return name;
@@ -48,6 +49,10 @@ public abstract class CharacterRace {
 	
 	public int getAge() {
 		return age;
+	}
+	
+	public String getDescription() {
+		return description;
 	}
 	
 }
