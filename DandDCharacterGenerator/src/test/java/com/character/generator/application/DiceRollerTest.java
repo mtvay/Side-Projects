@@ -1,6 +1,9 @@
-package com.techelevator;
+package com.character.generator.application;
 
 import org.junit.Test;
+
+import com.character.generator.application.DiceRoller;
+
 import org.junit.Assert;
 
 public class DiceRollerTest {
@@ -9,7 +12,7 @@ public class DiceRollerTest {
 	 * 
 	 * check abilityScoreRoll for 0 or number greater than 6 (total result cannot be over 18)
 	 * 
-	 * ask Walt about running the same test as a loop to cover for random generator possibilities
+	 * Walt mentioned breaking the arrange, act, assert rules and doing act and assert a second time, just make sure the message says when it failed (if it does)
 	 */
 	
 	@Test
@@ -19,11 +22,13 @@ public class DiceRollerTest {
 		
 		//Act
 		int result = roller.rollDice(1, 6);
+		boolean inRange = result >= 1 && result <= 6;
 		
 		//Assert
-		Assert.assertEquals((result > 0 && result < 7), result);
+		Assert.assertTrue("Result should be greater than or equal to 1 and less than or equal to sumber of sides on the die", inRange);
 	}
 	
+	//check if sort works and lowest vlaue is dropped
 	@Test
 	public void abilityScoreRoll_does_not_include_zero_or_return_over_18() {
 		//Arrange
@@ -31,9 +36,10 @@ public class DiceRollerTest {
 		
 		//Act
 		int result = roller.abilityScoreRoll();
+		boolean inRange = result >= 3 && result <= 18;
 		
 		//Assert
-		Assert.assertEquals(result > 0 && result < 19, result);
+		Assert.assertTrue("Result should be greater than or equal to 3 and less than or equal to 18", inRange);
 	}
 
 }

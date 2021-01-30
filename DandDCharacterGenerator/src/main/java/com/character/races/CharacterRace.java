@@ -1,4 +1,4 @@
-package com.techelevator;
+package com.character.races;
 
 import java.util.HashMap;
 import java.util.Map;

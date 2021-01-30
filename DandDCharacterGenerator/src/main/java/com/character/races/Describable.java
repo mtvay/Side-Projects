@@ -1,4 +1,4 @@
-package com.techelevator;
+package com.character.races;
 
 public interface Describable {
 
