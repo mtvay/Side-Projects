@@ -11,6 +11,9 @@ public class AbilityScores {
 	
 	private Map<String, Integer> abilityScores = new LinkedHashMap<>();
 	
+	public Map<String, Integer> getAbilityScores() {
+		return abilityScores;
+	}
 	//need to have another map to display ability score modifiers
 
 }

@@ -1,6 +1,6 @@
 package com.character.races;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public abstract class CharacterRace implements Describable {
@@ -17,7 +17,7 @@ public abstract class CharacterRace implements Describable {
 	private String speed;
 	private String languages;
 	private String race;
-	private Map<String, Integer> abilityScoreIncrease = new HashMap<>();
+	private Map<String, Integer> abilityScoreIncrease = new LinkedHashMap<>();
 	private int age;
 	private String description;
 	
