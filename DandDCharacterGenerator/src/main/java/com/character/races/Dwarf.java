@@ -24,6 +24,11 @@ public abstract class Dwarf extends CharacterRace {
 	public abstract Map<String, Integer> getAbilityScoreIncrease();
 	
 	public String getName() {   //This will need to pull a random number, 1 for male, 2 for female, and then roll another random number to pull from the array of names
+		
+		setMaleNames();
+		setFemaleNames();
+		setClanNames();
+		
 		int firstNameResult = diceRoller.rollDice(1, 2);
 		
 		if (firstNameResult == 1) {
@@ -57,7 +62,7 @@ public abstract class Dwarf extends CharacterRace {
 		}
 	}
 	
-	public void setFemaleNames(String femaleName) {
+	public void setFemaleNames() {
 		String[] female;
 		
 		try (Scanner nameScanner = new Scanner(dwarfFemaleNames)) {
@@ -74,7 +79,7 @@ public abstract class Dwarf extends CharacterRace {
 		}
 	}
 	
-	public void setClanNames(String clanName) {
+	public void setClanNames() {
 		String[] clan;
 		
 		try (Scanner nameScanner = new Scanner(dwarfClanNames)) {
@@ -94,8 +99,5 @@ public abstract class Dwarf extends CharacterRace {
 	public String getSpeed() {
 		return "Walking speed of 25 feet.";
 	}
-	
-
-	
 	
 }

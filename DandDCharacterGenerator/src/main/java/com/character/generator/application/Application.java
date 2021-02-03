@@ -1,6 +1,8 @@
 package com.character.generator.application;
 
-public class CharacterGeneratorApplication {
+import com.character.races.Dwarf;
+
+public class Application {
 
 	public static void main(String[] args) {
 		
@@ -15,7 +17,6 @@ public class CharacterGeneratorApplication {
 		//can get description by calling get description from CharacterRace, CharacterClass, and PersonalityAndBackground b/c they are all Describable.
 		
 		//DO I NEED TO GIVE CREDIT/REFERENCE/CITE THE PLAYER'S HANDBOOK?
-		
 		
 		
 	}
